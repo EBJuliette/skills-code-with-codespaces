@@ -1,18 +1,13 @@
-{ 
- "postCreateCommand": "echo '# Writing code upon codespace creation!'  >> codespace.md"
- 
-     },
-     "codespaces": {
-         "openFiles": [
-             "codespace.md"
-         ]
-     }
- }
-  // Name this configuration
+{
   "name": "Codespace for Skills!",
-  // Use the base codespace image
   "image": "mcr.microsoft.com/vscode/devcontainers/universal:latest",
-
+  "postCreateCommand": "echo '# Writing code upon codespace creation!' >> codespace.md",
+  "codespaces": {
+    "openFiles": [
+      "codespace.md"
+    ]
+  },
   "remoteUser": "codespace",
   "overrideCommand": false
 }
+
